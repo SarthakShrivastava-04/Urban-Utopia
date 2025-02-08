@@ -1,8 +1,10 @@
 import { Server } from "socket.io";
 
+const PORT = process.env.PORT || 4000; // Default to 4000 for local dev
+
 const io = new Server({
   cors: {
-    origin: "http://localhost:5173",
+    origin: "https://urban-utopia-jwn0.onrender.com",
   },
 });
 
@@ -38,4 +40,6 @@ io.on("connection", (socket) => {
   });
 });
 
-io.listen("4000");
+io.listen(PORT, () => {
+  console.log(`Socket running on port ${PORT}`);
+});
