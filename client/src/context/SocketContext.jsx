@@ -4,12 +4,14 @@ import { AuthContext } from "./AuthContext";
 
 export const SocketContext = createContext();
 
+const socketUrl = process.env.REACT_APP_SOCKET_URL;
+
 export const SocketContextProvider = ({ children }) => {
   const { currentUser } = useContext(AuthContext);
   const [socket, setSocket] = useState(null);
 
   useEffect(() => {
-    setSocket(io("https://real-estate-socket-fpz0.onrender.com"));
+    setSocket(io(socketUrl));
   }, []);
 
   useEffect(() => {
