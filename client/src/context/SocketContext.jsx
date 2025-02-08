@@ -4,7 +4,7 @@ import { AuthContext } from "./AuthContext";
 
 export const SocketContext = createContext();
 
-const socketUrl = process.env.SOCKET_URL || "http://localhost:4000";
+const socketUrl = process.env.SOCKET_URL;
 
 export const SocketContextProvider = ({ children }) => {
   const { currentUser } = useContext(AuthContext);
