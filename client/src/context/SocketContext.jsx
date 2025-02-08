@@ -4,7 +4,7 @@ import { AuthContext } from "./AuthContext";
 
 export const SocketContext = createContext();
 
-const socketUrl = process.env.SOCKET_URL;
+const socketUrl = "https://real-estate-socket-fpz0.onrender.com";
 
 export const SocketContextProvider = ({ children }) => {
   const { currentUser } = useContext(AuthContext);
