@@ -22,15 +22,10 @@ Urban Utopia is a **full-stack real estate platform** designed to streamline pro
 ## 🛠️ Tech Stack  
 
 ### 🎨 Frontend  
-- React  
-- SCSS  
-- Zustand  
+- React, SCSS, Zustand  
 
 ### 🏗️ Backend  
-- Node.js  
-- Express  
-- Prisma  
-- Socket.IO  
+- Node.js, Express, Prisma, Socket.IO  
 
 ### 🗄️ Database  
 - MongoDB  
