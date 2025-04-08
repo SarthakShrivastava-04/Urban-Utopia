@@ -47,13 +47,13 @@ function Login() {
             minLength={3}
             maxLength={20}
             type="text"
-            placeholder="Username"
+            placeholder="Username [demo: Joey]"
           />
           <input
             name="password"
             type="password"
             required
-            placeholder="Password"
+            placeholder="Password [demo: 123456]"
           />
           <button disabled={isLoading}>Login</button>
           {error && <span>{error}</span>}
